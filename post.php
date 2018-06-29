@@ -11,7 +11,11 @@
     <div class="mdui-card-media mdui-ripple">
       <img src="<?php $this->options->themeUrl('src/background-img.jpg'); ?>"/>
       <div class="mdui-card-menu">
-        <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+        <?php if($this->user->hasLogin()):?>
+          <a href="<?php _e($this->options->adminUrl()."write-post.php?cid=".$this->cid); ?>" class="mdui-btn mdui-btn-icon mdui-text-color-white"> 
+            <i class="mdui-icon material-icons">edit</i>
+          </a>
+        <?php endif;?>
       </div>
     </div>
     <div id='theme-content-avater' class="mdui-card-header">
@@ -37,9 +41,10 @@
       </div>
     </div>
     <div class="mdui-card-actions">
-      <button class="mdui-btn mdui-ripple">action 1</button>
+      <?php $this->need('comments.php'); ?>
+      <!--<button class="mdui-btn mdui-ripple">action 1</button>
       <button class="mdui-btn mdui-ripple">action 2</button>
-      <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+      <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>-->
     </div>
 </div>
 

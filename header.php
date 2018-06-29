@@ -67,8 +67,12 @@
 
   <li class="mdui-divider mdui-hidden-md-up"></li>
 
-  <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple">登录</a></li>
-  <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple">注册</a></li>
+<?php if($this->user->hasLogin()):?>
+  <li class="mdui-menu-item"><a href="/admin" class="mdui-ripple">管理</a></li>
+<?php else: ?>
+  <li class="mdui-menu-item"><a href="/admin/login.php" class="mdui-ripple">登录</a></li>
+  <li class="mdui-menu-item"><a href="/admin/register.php" class="mdui-ripple">注册</a></li>
+<?php endif;?>
 
 </ul>
 

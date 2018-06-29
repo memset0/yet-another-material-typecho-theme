@@ -1,3 +1,15 @@
+.theme-comments-chip {
+  background: #fff;
+}
+.theme-comments {
+  background-color: #ddd;
+  margin: -8px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.theme-comments-inputs {
+}
+
 .theme-content-avater-name {
   display: block;
   color: #000;

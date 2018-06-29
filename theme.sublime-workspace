@@ -31,6 +31,41 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "post.php",
+			"settings":
+			{
+				"buffer_size": 2014,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "comments.php",
+			"settings":
+			{
+				"buffer_size": 92,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n<div id=\"comments\">\n    <?php $this->comments()->to($comments); ?>\n    <?php if ($comments->have()): ?>\n\t<h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>\n    \n    <?php $comments->listComments(); ?>\n\n    <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>\n    \n    <?php endif; ?>\n\n    <?php if($this->allow('comment')): ?>\n    <div id=\"<?php $this->respondId(); ?>\" class=\"respond\">\n        <div class=\"cancel-comment-reply\">\n        <?php $comments->cancelReply(); ?>\n        </div>\n    \n    \t<h3 id=\"response\"><?php _e('添加新评论'); ?></h3>\n    \t<form method=\"post\" action=\"<?php $this->commentUrl() ?>\" id=\"comment-form\" role=\"form\">\n            <?php if($this->user->hasLogin()): ?>\n    \t\t<p><?php _e('登录身份: '); ?><a href=\"<?php $this->options->profileUrl(); ?>\"><?php $this->user->screenName(); ?></a>. <a href=\"<?php $this->options->logoutUrl(); ?>\" title=\"Logout\"><?php _e('退出'); ?> &raquo;</a></p>\n            <?php else: ?>\n    \t\t<p>\n                <label for=\"author\" class=\"required\"><?php _e('称呼'); ?></label>\n    \t\t\t<input type=\"text\" name=\"author\" id=\"author\" class=\"text\" value=\"<?php $this->remember('author'); ?>\" required />\n    \t\t</p>\n    \t\t<p>\n                <label for=\"mail\"<?php if ($this->options->commentsRequireMail): ?> class=\"required\"<?php endif; ?>><?php _e('Email'); ?></label>\n    \t\t\t<input type=\"email\" name=\"mail\" id=\"mail\" class=\"text\" value=\"<?php $this->remember('mail'); ?>\"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />\n    \t\t</p>\n    \t\t<p>\n                <label for=\"url\"<?php if ($this->options->commentsRequireURL): ?> class=\"required\"<?php endif; ?>><?php _e('网站'); ?></label>\n    \t\t\t<input type=\"url\" name=\"url\" id=\"url\" class=\"text\" placeholder=\"<?php _e('http://'); ?>\" value=\"<?php $this->remember('url'); ?>\"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />\n    \t\t</p>\n            <?php endif; ?>\n    \t\t<p>\n                <label for=\"textarea\" class=\"required\"><?php _e('内容'); ?></label>\n                <textarea rows=\"8\" cols=\"50\" name=\"text\" id=\"textarea\" class=\"textarea\" required ><?php $this->remember('text'); ?></textarea>\n            </p>\n    \t\t<p>\n                <button type=\"submit\" class=\"submit\"><?php _e('提交评论'); ?></button>\n            </p>\n    \t</form>\n    </div>\n    <?php else: ?>\n    <h3><?php _e('评论已关闭'); ?></h3>\n    <?php endif; ?>\n</div>\n",
+			"settings":
+			{
+				"buffer_size": 2410,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "temp.php",
+			"settings":
+			{
+				"buffer_size": 1183,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -127,23 +162,21 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/usr/themes/ringo",
-		"/C/xampp/htdocs/usr/themes/ringo/demo",
-		"/C/xampp/htdocs/usr/themes/ringo/src"
+		"/C/xampp/htdocs/usr/themes/ringo"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/usr/themes/ringo/header.php",
+		"/C/xampp/htdocs/usr/themes/ringo/index.php",
 		"/C/xampp/htdocs/usr/themes/ringo/src/style.css",
 		"/C/xampp/htdocs/usr/themes/ringo/functions.php",
 		"/C/xampp/htdocs/usr/themes/ringo/sidebar.php",
 		"/C/xampp/htdocs/usr/themes/ringo/post.php",
 		"/C/xampp/htdocs/usr/themes/ringo/demo/post.html",
 		"/C/xampp/htdocs/usr/themes/ringo/temp.php",
-		"/C/xampp/htdocs/usr/themes/ringo/index.php",
 		"/C/xampp/htdocs/usr/themes/ringo/src/directory.js",
 		"/C/xampp/htdocs/usr/themes/ringo/demo/directory.js",
 		"/C/xampp/htdocs/usr/themes/ringo/style.css",
-		"/C/xampp/htdocs/usr/themes/ringo/header.php",
 		"/C/xampp/htdocs/usr/themes/ringo/demo/style.css",
 		"/C/xampp/htdocs/usr/themes/ringo/footer.php",
 		"/C/xampp/htdocs/usr/themes/Next/footer.php",
@@ -235,8 +268,128 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "post.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1871,
+								1871
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "comments.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "temp.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1020,
+								983
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],

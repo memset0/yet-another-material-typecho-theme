@@ -23,8 +23,9 @@
         <?php $comments->cancelReply(); ?>
         </div>
         <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
-
-<?php if(!($this->user->hasLogin())): ?>
+            <?php if($this->user->hasLogin()): ?>
+            <p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
+            <?php else: ?>
 <div class="theme-comments-inputs">
     <div class="theme-comments-input mdui-textfield mdui-textfield-floating-label">
         <label for="author" class="mdui-textfield-label">昵称</label>
@@ -39,20 +40,16 @@
         <input class="mdui-textfield-input" type="url" name="url" id="url" value="<?php $this->remember('url'); ?>" <?php if ($this->options->commentsRequireURL): ?> required=""<?php endif; ?>/>
     </div>
 </div>
-<?php endif; ?>
-            
+            <?php endif; ?>
 
 <div>
     <!--<label for="textarea">内容</label>-->
     <div class="mdui-textfield">
-        <textarea class="mdui-textfield-input" cols="50" name="text" id="textarea" rows="4" placeholder="说些什么吧..."><?php $this->remember('text'); ?></textarea>
+        <textarea class="mdui-textfield-input" cols="50" name="text" id="textarea" rows="8" placeholder="Message"><?php $this->remember('text'); ?></textarea>
     </div>
 </div>
 
-<?php if($this->user->hasLogin()): ?>
-<button type="submit" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">以 <?php $this->user->screenName(); ?> 的身份评论</button>
-<a href="<?php $this->options->logoutUrl(); ?>" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">注销登录状态</a>
-<?php endif; ?>
+<button type="submit" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">提交评论</button>
         </form>
     </div>
     <?php endif; ?>

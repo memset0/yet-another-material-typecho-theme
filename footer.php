@@ -15,7 +15,7 @@
 </html>
 -->
 
-<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
+<script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
 <script src="<?php $this->options->themeUrl('src/directory.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('src/highlight.pack.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('src/holder.min.js'); ?>"></script>
