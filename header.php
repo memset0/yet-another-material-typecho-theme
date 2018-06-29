@@ -76,6 +76,23 @@
 </header>
 
 <div class="mdui-drawer mdui-shadow-4" id="main-drawer">
+
+<div class="mdui-card mdui-shadow-0" style="border-radius: 0px;">
+  <div class="mdui-card-media">
+    <img src="<?php $this->options->themeUrl('src/background-img.jpg'); ?>"/>
+    <div class="mdui-card-media-covered">
+      <div class="mdui-card-primary">
+        <!--<div class="mdui-card-primary-title">Title</div>-->
+        <div class="mdui-card-primary-subtitle"><?php $this->options->title(); ?></div>
+      </div>
+      <!--<div class="mdui-card-actions">
+        <button class="mdui-btn mdui-ripple mdui-ripple-white">action 1</button>
+        <button class="mdui-btn mdui-ripple mdui-ripple-white">action 2</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+
   <div id="directory">
     
   </div>

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
 				"scr",
 				"scrollPercent"
 			],
@@ -27,15 +31,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.php",
-			"settings":
-			{
-				"buffer_size": 2366,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -133,15 +128,21 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/usr/themes/ringo",
+		"/C/xampp/htdocs/usr/themes/ringo/demo",
 		"/C/xampp/htdocs/usr/themes/ringo/src"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/usr/themes/ringo/temp.php",
 		"/C/xampp/htdocs/usr/themes/ringo/src/style.css",
+		"/C/xampp/htdocs/usr/themes/ringo/functions.php",
+		"/C/xampp/htdocs/usr/themes/ringo/sidebar.php",
 		"/C/xampp/htdocs/usr/themes/ringo/post.php",
-		"/C/xampp/htdocs/usr/themes/ringo/style.css",
+		"/C/xampp/htdocs/usr/themes/ringo/demo/post.html",
+		"/C/xampp/htdocs/usr/themes/ringo/temp.php",
 		"/C/xampp/htdocs/usr/themes/ringo/index.php",
+		"/C/xampp/htdocs/usr/themes/ringo/src/directory.js",
+		"/C/xampp/htdocs/usr/themes/ringo/demo/directory.js",
+		"/C/xampp/htdocs/usr/themes/ringo/style.css",
 		"/C/xampp/htdocs/usr/themes/ringo/header.php",
 		"/C/xampp/htdocs/usr/themes/ringo/demo/style.css",
 		"/C/xampp/htdocs/usr/themes/ringo/footer.php",
@@ -195,7 +196,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 49.0
 	},
 	"find_in_files":
 	{
@@ -209,6 +210,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"body",
+			";\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -232,37 +235,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2366,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								465,
-								525
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 96.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

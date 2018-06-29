@@ -117,8 +117,11 @@ var postDirectoryBuild = function() {
         }
         list += list_body + '</div>';
         currentList += list + '</div>';
+        if (listed) {
+            $$('#directory').append('<div class="mdui-divider"></div>');
+            $$('#directory').append(currentList);
+        }
         //console.log(currentList)
-        $$('#directory').append(currentList);
         //directory.appendChild(currentList);
     };
     createPostDirectory(document.getElementById('content'));
