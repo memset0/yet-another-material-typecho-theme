@@ -1,11 +1,11 @@
 <?php
 /**
- * 这是 Typecho 0.9 系统的一套默认皮肤
+ * 一套基于MDUI框架的质感设计主题
  * 
- * @package Typecho Replica Theme 
- * @author Typecho Team
- * @version 1.2
- * @link http://typecho.org
+ * @package Ringo (Material Design)
+ * @author memset0
+ * @version 0.1
+ * @link https://memset0.cn
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
