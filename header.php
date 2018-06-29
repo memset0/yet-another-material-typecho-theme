@@ -14,7 +14,8 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
-
+  
+  <link rel="shortcut icon" href="<?php $this->options->themeUrl('src/favicon.png'); ?>">
   <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css">
   <link rel="stylesheet" href="<?php $this->options->themeUrl('src/highlight.css'); ?>"/>
   <link rel="stylesheet" href="<?php $this->options->themeUrl('src/railscasts.css'); ?>"/>
@@ -42,20 +43,25 @@
     <div class="mdui-toolbar-spacer"></div>
 
     <!-- 右半部分 -->
-  <a href="../" class="mdui-typo-title mdui-hidden-sm-down">分类</a>
-  <a href="../" class="mdui-typo-title mdui-hidden-sm-down">分类</a>
-  <a href="../" class="mdui-typo-title mdui-hidden-sm-down">分类</a>
-  <a href="../" class="mdui-typo-title mdui-hidden-sm-down">分类</a>
+
+<?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+<?php while($pages->next()): ?>
+  <a href="<?php $pages->permalink(); ?>" class="mdui-typo-title mdui-hidden-sm-down"><?php $pages->title(); ?></a>
+<?php endwhile; ?>
+
 
   <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#menu'}">
     <i class="mdui-icon material-icons ion-plus-round">more_vert</i>
   </button>
 
 <ul class="mdui-menu" id="menu">
-  <li class="mdui-menu-item mdui-hidden-md-up"><a href="javascript:;" class="mdui-ripple">分类</a></li>
-  <li class="mdui-menu-item mdui-hidden-md-up"><a href="javascript:;" class="mdui-ripple">分类</a></li>
-  <li class="mdui-menu-item mdui-hidden-md-up"><a href="javascript:;" class="mdui-ripple">分类</a></li>
-  <li class="mdui-menu-item mdui-hidden-md-up"><a href="javascript:;" class="mdui-ripple">分类</a></li>
+
+
+<?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+<?php while($pages->next()): ?>
+<li class="mdui-menu-item mdui-hidden-md-up"><a href="<?php $pages->permalink(); ?>" class="mdui-ripple"><?php $pages->title(); ?></a></li>
+<?php endwhile; ?>
+
   <li class="mdui-divider mdui-hidden-md-up"></li>
   <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple">登录</a></li>
   <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple">注册</a></li>
