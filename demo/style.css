@@ -1,9 +1,26 @@
+
+.theme-article-card {
+	display: block;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+.theme-article-card-content {
+	/* height: 100px; */
+	padding: 20px;
+	text-decoration: none;
+}
+
+
 .theme-body {
 	/* background-color: #bbb; */
 	margin-top: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
 	max-width: 800px;
+}
+
+.theme-introduction {
+	margin-bottom: 40px;
 }
 
 .theme-directory-spacer {
