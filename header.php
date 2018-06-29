@@ -1,36 +1,77 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<!DOCTYPE HTML>
-<html class="no-js">
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
 <head>
-    <meta charset="<?php $this->options->charset(); ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title><?php $this->archiveTitle(array(
+  <meta charset="<?php $this->options->charset(); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 
-    <!-- 使用url函数转换相关路径 -->
-    <link rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+  <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css">
+  <link rel="stylesheet" href="<?php $this->options->themeUrl('src/highlight.css'); ?>"/>
+  <link rel="stylesheet" href="<?php $this->options->themeUrl('src/railscasts.css'); ?>"/>
+  <link rel="stylesheet" href="<?php $this->options->themeUrl('src/style.css'); ?>"/>
 
-    <!--[if lt IE 9]>
-    <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
-    <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+  <!-- 通过自有函数输出HTML头部信息 -->
+  <?php $this->header(); ?>
 
-    <!-- 通过自有函数输出HTML头部信息 -->
-    <?php $this->header(); ?>
 </head>
-<body>
-<!--[if lt IE 8]>
-    <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
-<![endif]-->
 
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-indigo mdui-theme-accent-pink">
+
+<header class="mdui-appbar mdui-appbar-fixed mdui-shadow-4 ">
+  <div class="mdui-toolbar mdui-color-theme">
+
+    <!-- 菜单栏切换按钮-->
+    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}">
+      <i class="mdui-icon material-icons">menu</i>
+    </span>
+
+    <!-- 左半部分 -->
+    <a href="../" class="mdui-typo-title mdui-hidden-xs">站点名称</a>
+    <a href="./" class="mdui-typo-title">标题</a>
+
+    <div class="mdui-toolbar-spacer"></div>
+
+    <!-- 右半部分 -->
+  <a href="../" class="mdui-typo-title mdui-hidden-sm-down">分类</a>
+  <a href="../" class="mdui-typo-title mdui-hidden-sm-down">分类</a>
+  <a href="../" class="mdui-typo-title mdui-hidden-sm-down">分类</a>
+  <a href="../" class="mdui-typo-title mdui-hidden-sm-down">分类</a>
+
+  <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#menu'}">
+    <i class="mdui-icon material-icons ion-plus-round">more_vert</i>
+  </button>
+
+<ul class="mdui-menu" id="menu">
+  <li class="mdui-menu-item mdui-hidden-md-up"><a href="javascript:;" class="mdui-ripple">分类</a></li>
+  <li class="mdui-menu-item mdui-hidden-md-up"><a href="javascript:;" class="mdui-ripple">分类</a></li>
+  <li class="mdui-menu-item mdui-hidden-md-up"><a href="javascript:;" class="mdui-ripple">分类</a></li>
+  <li class="mdui-menu-item mdui-hidden-md-up"><a href="javascript:;" class="mdui-ripple">分类</a></li>
+  <li class="mdui-divider mdui-hidden-md-up"></li>
+  <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple">登录</a></li>
+  <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple">注册</a></li>
+</ul>
+
+  </div>
+</header>
+
+<div class="mdui-drawer mdui-shadow-4" id="main-drawer">
+  <div id="directory">
+    
+  </div>
+</div>
+
+
+<!--
 <header id="header" class="clearfix">
     <div class="container">
         <div class="row">
@@ -60,12 +101,10 @@
                     <?php endwhile; ?>
                 </nav>
             </div>
-        </div><!-- end .row -->
+        </div>
     </div>
-</header><!-- end #header -->
+</header>
 <div id="body">
     <div class="container">
         <div class="row">
-
-    
-    
+-->
