@@ -104,15 +104,14 @@ var postDirectoryBuild = function() {
               else listed = true;
 
               list = '<div class="mdui-collapse-item">';
-              list_header = '<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"><a href="#' + titleId[i] + '" class="mdui-list-item-content">' + contentArr[i] + '</a></div>';
+              list_header = '<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"><a href="#' + titleId[i] + '" class="mdui-list-item-content mdui-text-truncate">' + contentArr[i] + '</a></div>';
               list_body = '<div class="mdui-collapse-item-body mdui-list">';
               list += list_header;
             } else {
               /*mdui-collapse-item-body mdui-list */
               for (j = 1; j < dirNum.length; j++) 
                 contentArr[i] = '<div class="theme-directory-spacer"></div>' + contentArr[i];
-              item = '<a href="' + '#' + titleId[i] + 
-                '" class="theme-directory-item mdui-list-item mdui-ripple">' + contentArr[i] + '</a>';
+              item = '<a href="' + '#' + titleId[i] + '" class="theme-directory-item mdui-text-truncate mdui-list-item mdui-ripple">' + contentArr[i] + '</a>';
               list_body += item;
             }
         }
