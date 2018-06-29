@@ -54,13 +54,11 @@
   <a href="<?php $pages->permalink(); ?>" class="mdui-typo-title mdui-hidden-sm-down"><?php $pages->title(); ?></a>
 <?php endwhile; ?>
 
-
   <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#menu'}">
     <i class="mdui-icon material-icons ion-plus-round">more_vert</i>
   </button>
 
 <ul class="mdui-menu" id="menu">
-
 
 <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
 <?php while($pages->next()): ?>
@@ -68,8 +66,10 @@
 <?php endwhile; ?>
 
   <li class="mdui-divider mdui-hidden-md-up"></li>
+
   <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple">登录</a></li>
   <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple">注册</a></li>
+
 </ul>
 
   </div>
