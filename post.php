@@ -7,7 +7,7 @@
     <div class="mdui-row">
       <div class="mdui-col-xs-12">
 
-<div class="mdui-card">
+<div class="mdui-card mdui-shadow-4 mdui-hoverable">
     <div class="mdui-card-media">
       <img src="<?php $this->options->themeUrl('src/background-img.jpg'); ?>"/>
       <div class="mdui-card-menu">
@@ -27,11 +27,15 @@
       //console.log(url);
       item.innerHTML = '<img class="mdui-card-header-avatar" src="' + url + '">' + item.innerHTML;
     </script>
-    <div class="mdui-card-primary">
+    <!--<div class="mdui-card-primary">
       <div class="mdui-card-primary-title">Title</div>
       <div class="mdui-card-primary-subtitle">Subtitle</div>
+    </div>-->
+    <div class="mdui-card-content">
+      <div class="mdui-typo" id="content">
+        <?php $this->content(); ?>
+      </div>
     </div>
-    <div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
     <div class="mdui-card-actions">
       <button class="mdui-btn mdui-ripple">action 1</button>
       <button class="mdui-btn mdui-ripple">action 2</button>
