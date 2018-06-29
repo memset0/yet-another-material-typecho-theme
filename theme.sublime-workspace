@@ -4,26 +4,6 @@
 		"selected_items":
 		[
 			[
-				"co",
-				"contentArr"
-			],
-			[
-				"title",
-				"titleId"
-			],
-			[
-				"level",
-				"levelArr"
-			],
-			[
-				"pdd",
-				"padding-right"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
 				"scr",
 				"scrollPercent"
 			],
@@ -48,37 +28,19 @@
 	"buffers":
 	[
 		{
-			"file": "demo/index.html",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 4915,
+				"buffer_size": 2385,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "demo/style.css",
 			"settings":
 			{
-				"buffer_size": 226,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "demo/directory.js",
-			"settings":
-			{
-				"buffer_size": 4797,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "demo/test.html",
-			"settings":
-			{
-				"buffer_size": 29189,
+				"buffer_size": 1625,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -179,14 +141,11 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/surface/Desktop/ringo",
-		"/C/Users/surface/Desktop/ringo/demo"
+		"/C/xampp/htdocs/usr/themes/ringo",
+		"/C/xampp/htdocs/usr/themes/ringo/demo"
 	],
 	"file_history":
 	[
-		"/C/Users/surface/Desktop/ringo/demo/backup.html",
-		"/C/Users/surface/Desktop/ringo/demo/test.html",
-		"/C/Users/surface/Desktop/ringo/demo/index.html",
 		"/C/xampp/htdocs/usr/themes/Next/footer.php",
 		"/C/xampp/htdocs/usr/themes/Next/style.css",
 		"/C/xampp/htdocs/usr/themes/Next/post.php",
@@ -237,7 +196,7 @@
 	],
 	"find":
 	{
-		"height": 98.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -251,20 +210,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"isDirNum",
-			"h2",
-			"ul",
-			"join",
-			"dirNum.joindirNum.join",
-			">\n",
-			"\n\n<!DOCTYPE html>\n<html lang=\"zh-cmn-Hans\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no\"/>\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"/>\n  <meta name=\"renderer\" content=\"webkit\">\n  <meta http-equiv=\"Cache-Control\" content=\"no-siteapp\"/>\n\n  <title>标题 - 站点名称</title>\n\n  <link rel=\"stylesheet\" href=\"https://mdui-aliyun.cdn.w3cbus.com/source/dist/css/mdui.min.css\"/>\n  <link rel=\"stylesheet\" href=\"https://mdui-aliyun.cdn.w3cbus.com/docs/assets/highlight-9.12.0/styles/github-gist.css\"/>\n  <link rel=\"stylesheet\" href=\"https://mdui-aliyun.cdn.w3cbus.com/docs/assets/highlight-9.12.0/styles/railscasts.css\"/>\n\n\n</head>\n\n\n\n<body class=\"mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-indigo mdui-theme-accent-pink\">\n\n<header class=\"mdui-appbar mdui-appbar-fixed mdui-shadow-4 \">\n  <div class=\"mdui-toolbar mdui-color-theme\">\n\n    <!-- 菜单栏切换按钮-->\n    <span class=\"mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white\" mdui-drawer=\"{target: '#main-drawer', swipe: true}\">\n      <i class=\"mdui-icon material-icons\">menu</i>\n    </span>\n\n    <!-- 左半部分 -->\n    <a href=\"../\" class=\"mdui-typo-title mdui-hidden-xs\">站点名称</a>\n    <a href=\"./\" class=\"mdui-typo-title\">标题</a>\n\n    <div class=\"mdui-toolbar-spacer\"></div>\n\n    <!-- 右半部分 -->\n  <a href=\"../\" class=\"mdui-typo-title mdui-hidden-sm-down\">分类</a>\n  <a href=\"../\" class=\"mdui-typo-title mdui-hidden-sm-down\">分类</a>\n  <a href=\"../\" class=\"mdui-typo-title mdui-hidden-sm-down\">分类</a>\n  <a href=\"../\" class=\"mdui-typo-title mdui-hidden-sm-down\">分类</a>\n\n  <button class=\"mdui-btn mdui-ripple mdui-btn-icon\" mdui-menu=\"{target: '#menu'}\">\n    <i class=\"mdui-icon material-icons ion-plus-round\">more_vert</i>\n  </button>\n\n<ul class=\"mdui-menu\" id=\"menu\">\n  <li class=\"mdui-menu-item mdui-hidden-md-up\"><a href=\"javascript:;\" class=\"mdui-ripple\">分类</a></li>\n  <li class=\"mdui-menu-item mdui-hidden-md-up\"><a href=\"javascript:;\" class=\"mdui-ripple\">分类</a></li>\n  <li class=\"mdui-menu-item mdui-hidden-md-up\"><a href=\"javascript:;\" class=\"mdui-ripple\">分类</a></li>\n  <li class=\"mdui-menu-item mdui-hidden-md-up\"><a href=\"javascript:;\" class=\"mdui-ripple\">分类</a></li>\n  <li class=\"mdui-divider mdui-hidden-md-up\"></li>\n  <li class=\"mdui-menu-item\"><a href=\"javascript:;\" class=\"mdui-ripple\">登录</a></li>\n  <li class=\"mdui-menu-item\"><a href=\"javascript:;\" class=\"mdui-ripple\">注册</a></li>\n</ul>\n\n  </div>\n</header>\n\n<div class=\"mdui-drawer mdui-shadow-4\" id=\"main-drawer\">\n  <div class=\"mdui-list\" mdui-collapse=\"{accordion: true}\" style=\"margin-bottom: 76px;\">\n    <div class=\"mdui-collapse-item mdui-collapse-item-open\">\n      <div class=\"mdui-collapse-item-header mdui-list-item mdui-ripple\">\n        <i class=\"mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue\">near_me</i>\n        <div class=\"mdui-list-item-content\">开始使用</div>\n        <i class=\"mdui-collapse-item-arrow mdui-icon material-icons\">keyboard_arrow_down</i>\n      </div>\n      <div class=\"mdui-collapse-item-body mdui-list\">\n        <a href=\"./download\" class=\"mdui-list-item mdui-ripple \">安装</a>\n      </div>\n    </div>\n\n    <div class=\"mdui-collapse-item \">\n      <div class=\"mdui-collapse-item-header mdui-list-item mdui-ripple\">\n        <i class=\"mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-orange\">layers</i>\n        <div class=\"mdui-list-item-content\">样式</div>\n        <i class=\"mdui-collapse-item-arrow mdui-icon material-icons\">keyboard_arrow_down</i>\n      </div>\n      <div class=\"mdui-collapse-item-body mdui-list\">\n        <a href=\"./color\" class=\"mdui-list-item mdui-ripple \">颜色与主题</a>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<style type=\"text/css\">\n  .theme-body {\n    /* background-color: #bbb; */\n    margin-top: 20px;\n    padding-left: 20px;\n    padding-right: 20px;\n    max-width: 800px;\n  }\n</style>\n\n<div class=\"theme-body mdui-center\">\n  <div class=\"mdui-container\">\n    <h1 class=\"mdui-text-color-theme\">兼容性列表</h1>\n\n\n    <div class=\"mdui-typo\">\n\n\n\n      <p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p>\n      <p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p>\n      <p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p><p>内容</p>\n\n    </div>\n  </div>\n</div>\n\n\n\n\n\n<script src=\"https://mdui-aliyun.cdn.w3cbus.com/docs/assets/smooth-scroll-11.1.0/smooth-scroll.min.js\"></script>\n\n<script src=\"https://mdui-aliyun.cdn.w3cbus.com/docs/assets/holder-2.9.4/holder.min.js\"></script>\n<script src=\"https://mdui-aliyun.cdn.w3cbus.com/docs/assets/highlight-9.12.0/highlight.pack.js\"></script>\n<script src=\"https://mdui-aliyun.cdn.w3cbus.com/source/dist/js/mdui.min.js\"></script>\n\n<script type=\"text/javascript\">\n(function () {\n    var event = document.addEventListener ? {\n        add: 'addEventListener',\n        triggers: ['scroll', 'mousemove', 'keyup', 'touchstart'],\n        load: 'DOMContentLoaded'\n    } : {\n        add: 'attachEvent',\n        triggers: ['onfocus', 'onmousemove', 'onkeyup', 'ontouchstart'],\n        load: 'onload'\n    }, added = false;\n\n    document[event.add](event.load, function () {\n        var r = document.getElementById('respond-post-477'),\n            input = document.createElement('input');\n        input.type = 'hidden';\n        input.name = '_';\n        input.value = (function () {\n    var _5Kg = 'a'//'X'\n+//'Mn'\n'e'+'5'//'kb'\n+'IRT'//'IRT'\n+'ce'//'d0j'\n+//'8ZY'\n'8ZY'+'f0'//'d'\n+//'92b'\n'4'+//'W'\n'8e'+//'hVd'\n'51'+'821'//'KMz'\n+'3'//'I'\n+//'py'\n'f'+'1a'//'IYm'\n+//'Cfl'",
-			"分类",
-			"//",
-			"http://",
-			"https://",
-			"mdui-drawer",
-			"涟漪",
-			"="
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -272,8 +217,6 @@
 		"regex": true,
 		"replace_history":
 		[
-			"https://",
-			"//"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -284,43 +227,41 @@
 	"folders":
 	[
 		{
-			"path": "C:\\Users\\surface\\Desktop\\ringo"
+			"path": "C:\\xampp\\htdocs\\usr\\themes\\ringo"
 		}
 	],
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "demo/index.html",
+					"file": "index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4915,
+						"buffer_size": 2385,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2865,
-								2865
+								2219,
+								2219
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 663.111111111,
+						"translation.y": 428.888888889,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -329,86 +270,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 226,
+						"buffer_size": 1625,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								114,
-								23
+								610,
+								610
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "demo/directory.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4797,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4148,
-								4148
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "demo/test.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 29189,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4034,
-								4056
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1054.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -416,7 +299,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 58.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -457,7 +340,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 184.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -471,7 +354,7 @@
 	},
 	"select_project":
 	{
-		"height": 1000.0,
+		"height": 789.777777778,
 		"last_filter": "",
 		"selected_items":
 		[
@@ -499,7 +382,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 218.0,
+	"side_bar_width": 243.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
