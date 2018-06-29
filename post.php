@@ -1,27 +1,51 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<div class="col-mb-12 col-8" id="main" role="main">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-        <h1 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
-        <ul class="post-meta">
-            <li itemprop="author" itemscope itemtype="http://schema.org/Person"><?php _e('作者: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></li>
-            <li><?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
-            <li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
-        </ul>
-        <div class="post-content" itemprop="articleBody">
-            <?php $this->content(); ?>
-        </div>
-        <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
-    </article>
 
-    <?php $this->need('comments.php'); ?>
+<div class="theme-body mdui-center">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      <div class="mdui-col-xs-12">
 
-    <ul class="post-near">
-        <li>上一篇: <?php $this->thePrev('%s','没有了'); ?></li>
-        <li>下一篇: <?php $this->theNext('%s','没有了'); ?></li>
-    </ul>
-</div><!-- end #main-->
+<div class="mdui-card">
+    <div class="mdui-card-media">
+      <img src="<?php $this->options->themeUrl('src/background-img.jpg'); ?>"/>
+      <div class="mdui-card-menu">
+        <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+      </div>
+    </div>
+    <div id='theme-content-avater' class="mdui-card-header">
+      <a href="<?php $this->author->permalink(); ?>" class="theme-content-avater-name mdui-card-header-title"><?php $this->author(); ?></a>
+      <div class="mdui-card-header-subtitle">
+        <?php $this->date('Y年n月j日 G时i分'); ?>
+        发表于 <?php $this->category(', '); ?>
+      </div>
+    </div>
+    <script>
+      item = document.getElementById('theme-content-avater');
+      url = '<?php $str = $this->author->gravatar(80); ?>'.split('"')[1];
+      //console.log(url);
+      item.innerHTML = '<img class="mdui-card-header-avatar" src="' + url + '">' + item.innerHTML;
+    </script>
+    <div class="mdui-card-primary">
+      <div class="mdui-card-primary-title">Title</div>
+      <div class="mdui-card-primary-subtitle">Subtitle</div>
+    </div>
+    <div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+    <div class="mdui-card-actions">
+      <button class="mdui-btn mdui-ripple">action 1</button>
+      <button class="mdui-btn mdui-ripple">action 2</button>
+      <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+    </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+-->
 
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>

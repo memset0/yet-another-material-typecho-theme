@@ -31,18 +31,9 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 2385,
+				"buffer_size": 2366,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "demo/style.css",
-			"settings":
-			{
-				"buffer_size": 1625,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -142,10 +133,18 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/usr/themes/ringo",
-		"/C/xampp/htdocs/usr/themes/ringo/demo"
+		"/C/xampp/htdocs/usr/themes/ringo/src"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/usr/themes/ringo/temp.php",
+		"/C/xampp/htdocs/usr/themes/ringo/src/style.css",
+		"/C/xampp/htdocs/usr/themes/ringo/post.php",
+		"/C/xampp/htdocs/usr/themes/ringo/style.css",
+		"/C/xampp/htdocs/usr/themes/ringo/index.php",
+		"/C/xampp/htdocs/usr/themes/ringo/header.php",
+		"/C/xampp/htdocs/usr/themes/ringo/demo/style.css",
+		"/C/xampp/htdocs/usr/themes/ringo/footer.php",
 		"/C/xampp/htdocs/usr/themes/Next/footer.php",
 		"/C/xampp/htdocs/usr/themes/Next/style.css",
 		"/C/xampp/htdocs/usr/themes/Next/post.php",
@@ -233,7 +232,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -242,15 +241,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2385,
+						"buffer_size": 2366,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2219,
-								2219
+								465,
+								525
 							]
 						],
 						"settings":
@@ -258,37 +257,7 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 428.888888889,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "demo/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1625,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								610,
-								610
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 96.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
