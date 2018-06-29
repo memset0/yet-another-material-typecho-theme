@@ -8,7 +8,7 @@
       <div class="mdui-col-xs-12">
 
 <div class="mdui-card mdui-shadow-4 mdui-hoverable">
-    <div class="mdui-card-media">
+    <div class="mdui-card-media mdui-ripple">
       <img src="<?php $this->options->themeUrl('src/background-img.jpg'); ?>"/>
       <div class="mdui-card-menu">
         <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
