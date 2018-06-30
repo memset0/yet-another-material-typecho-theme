@@ -1,3 +1,10 @@
+.theme-comment-list {
+  margin-left: -40px
+}
+.theme-comment-list ol {
+  padding-left: 40px;
+}
+
 .theme-comment-avatar-chip {
     background-color: #fff;
 }

@@ -7,7 +7,7 @@
     $commentClass = '';
     $commentLevelClass = $comments->_levels > 0 ? ' comment-child' : ' comment-parent';  //评论层数大于0为子级，否则是父级
     ?>
-    <div id="li-<?php $comments->theId(); ?>" class="comment mdl-color-text--grey-700 comment-body<?php
+    <div id="li-<?php $comments->theId(); ?>" class="comment comment-body<?php
     if ($comments->_levels > 0) {
         echo ' comment-child';
         $comments->levelsAlt(' comment-level-odd', ' comment-level-even');
@@ -20,7 +20,7 @@
 
 
         <!-- Comment info -->
-        <header class="comment header" id="theme-comment-avatar-<?php $comments->theId(); ?>">
+        <div class="comment header" id="theme-comment-avatar-<?php $comments->theId(); ?>">
 
             <!-- Comment avatar -->
 <div class="mdui-chip theme-comment-avatar-chip">
@@ -31,36 +31,23 @@
     <span class="mdui-chip-title"><?php $comments->date('Y-m-d, H:i'); ?></span>
 </div>
 
-<?php $comments->reply('<button class="mdui-btn mdui-btn-icon" id="comment-share-<?php $comments->theId(); ?>-button" ">
+<?php $comments->reply('<button class="theme-comment-reply-button mdui-text-color-theme-accent mdui-btn mdui-btn-icon" id="comment-share-<?php $comments->theId(); ?>-button" ">
                 <i class="mdui-icon material-icons">reply</i>
             </button>'); ?>
 
 <?php $comments->content(); ?>
 
-        </header>
-
-        <!-- Comment content -->
-        
-
-        <!-- Comment actions -->
-        <nav class="comment__actions">
-            <!-- reply -->
-            
-
-        </nav>
+        </div>
 
         <!-- Comment answers -->
         <div class="comment__answers">
             <?php if ($comments->children) {
                 ?>
-                <!--是否嵌套评论判断开始-->
                 <div class="comment-children">
                     <?php $comments->threadedComments($options); ?>
-                    <!--嵌套评论所有内容-->
                 </div>
                 <?php
             } ?>
-            <!--是否嵌套评论判断结束-->
         </div>
 
     </div>
@@ -86,7 +73,11 @@
 </div>
 
     <?php if ($comments->have()): ?>
+
+<div class="theme-comment-list">
     <?php $comments->listComments(); ?>
+</div>
+
     <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
     
     <?php endif; ?>
