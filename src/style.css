@@ -1,8 +1,45 @@
+
+
+.theme-comment-avatar-chip {
+    background-color: #fff;
+}
+.theme-comment-avatar-chip a {
+  color: #000;
+  text-decoration: none;
+}
+.theme-comment-avatar-chip img {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: -4px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #989898;
+    border-radius: 50%;
+}
+
+.theme-search {
+  max-width: 40%;
+}
+.theme-search * {
+  color: #fff!important;
+}
+.theme-search input {
+  border-bottom-color: #fff!important;
+  box-shadow: 0 1px 0 0 #fff!important;
+}
+
 .theme-comments-chip {
   background: #fff;
+  margin-right: 10px;
 }
 .theme-comments {
-  background-color: #ddd;
+  background-color: #eaeaea;
   margin: -8px;
   padding: 20px;
   padding-bottom: 40px;

@@ -54,6 +54,12 @@
   <a href="<?php $pages->permalink(); ?>" class="mdui-typo-title mdui-hidden-sm-down"><?php $pages->title(); ?></a>
 <?php endwhile; ?>
 
+<div class="theme-search mdui-text-color-white-text mdui-textfield mdui-textfield-expandable mdui-float-right">
+  <button class="mdui-text-color-white-text mdui-textfield-icon mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></button>
+  <input class="mdui-text-color-white-text mdui-textfield-input" type="text" placeholder="Search"/>
+  <button class="mdui-text-color-white-text mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
+</div>
+
   <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#menu'}">
     <i class="mdui-icon material-icons ion-plus-round">more_vert</i>
   </button>
