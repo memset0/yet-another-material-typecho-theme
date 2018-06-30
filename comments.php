@@ -31,6 +31,10 @@
     <span class="mdui-chip-title"><?php $comments->date('Y-m-d, H:i'); ?></span>
 </div>
 
+<?php $comments->reply('<button class="mdui-btn mdui-btn-icon" id="comment-share-<?php $comments->theId(); ?>-button" ">
+                <i class="mdui-icon material-icons">reply</i>
+            </button>'); ?>
+
 <?php $comments->content(); ?>
 
         </header>
@@ -41,27 +45,8 @@
         <!-- Comment actions -->
         <nav class="comment__actions">
             <!-- reply -->
-            <?php $comments->reply('<button id="comment-reply-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">forum</i>
-            <span class="visuallyhidden">reply comment</span>
-            </button>'); ?>
-            <!-- share -->
-            <button id="comment-share-<?php $comments->theId(); ?>-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">share</i>
-                <span class="visuallyhidden">share comment</span>
-            </button>
-            <!--<button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">share</i></button>-->
-            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="comment-share-<?php $comments->theId(); ?>-button">
-                <a class="md-menu-list-a" target="view_window" href="<?php $comments->permalink(); ?>">
-                    <li class="mdl-menu__item">在新标签页中打开</li>
-                </a>
-                <a class="md-menu-list-a" href="https://twitter.com/intent/tweet?text=<?php echo htmlspecialchars($comments->content); ?>+from&url=<?php $comments->permalink(); ?>">
-                    <li class="mdl-menu__item">分享到 Twitter</li>
-                </a>
-                <a class="md-menu-list-a" href="https://plus.google.com/share?url=<?php $comments->permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-                    <li class="mdl-menu__item">分享到 Google+</li>
-                </a>
-            </ul>
+            
+
         </nav>
 
         <!-- Comment answers -->
@@ -97,7 +82,7 @@
     <span class="mdui-chip-icon mdui-color-theme-accent">
         <i class="mdui-icon material-icons">arrow_forward</i>
     </span>
-    <span class="mdui-chip-title"><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></span>
+    <span class="mdui-chip-title"><?php $this->commentsNum(_t('这里还没有评论，抢个沙发吧！'), _t('仅有一条评论，赶快再留一条！'), _t('已有 %d 条评论，评论一下吧！')); ?></span>
 </div>
 
     <?php if ($comments->have()): ?>
@@ -107,9 +92,10 @@
     <?php endif; ?>
 
     <?php if($this->allow('comment')): ?>
+
     <div id="<?php $this->respondId(); ?>" class="respond">
         <div class="cancel-comment-reply">
-        <?php $comments->cancelReply(); ?>
+            
         </div>
         <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
 
@@ -139,9 +125,14 @@
 </div>
 
 <?php if($this->user->hasLogin()): ?>
-<button type="submit" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">以 <?php $this->user->screenName(); ?> 的身份评论</button>
-<a href="<?php $this->options->logoutUrl(); ?>" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">注销登录状态</a>
+<button type="submit" class="theme-comment-button mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">以 <?php $this->user->screenName(); ?> 的身份评论</button>
+<a href="<?php $this->options->logoutUrl(); ?>" class="theme-comment-button mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">注销登录状态</a>
 <?php endif; ?>
+
+<!-- 取消回复功能 -> 不会搞
+<?php $comments->cancelReply('取消回复状态'); ?>
+-->
+
         </form>
     </div>
     <?php endif; ?>
